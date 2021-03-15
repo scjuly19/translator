@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Talk Banana</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+      }
+      textarea {
+        width: 50%;
+        height: 10vh;
+        margin-top: 3rem;
+      }
+      button {
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 200px;
+        background: #fffc00; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #ffffff,
+          #fffc00
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to left,
+          #ffffff,
+          #fffc00
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border: 1px solid black;
+        outline: 0!important;
+      }
+      #output {
+        height: 10vh;
+        width: 50%;
+        border: 1px solid black;
+        text-align: center;
+      }
+      header {
+        text-align: center;
+        width: 100%;
+        background: yellow;
+        font-size: 2rem;
+        font-style: italic;
+        position: relative;
+        height: 20vh;
+       border-bottom-right-radius: 1rem;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header>The Banana Way to Say it!😉</header>
+    <textarea
+      placeholder="Put your text here to convert to banana..."
+      id="txt-area"
+    ></textarea>
+    <button id="btn">Translate</button>
+    <div style="padding: 1rem;">Here is your output 👇</div>
+    <div id="output"></div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
